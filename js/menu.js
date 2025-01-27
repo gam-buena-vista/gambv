@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </label>
         <nav class="navbar">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
                 <li>
                     <a href="#">Gobierno Municipal ▼</a>
                     <ul>
