@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li>
                     <a href="#">Gobierno Municipal ▼</a>
                     <ul>
-                        <li><a href="../../../../Menu/Gobierno Municipal/Historia/historia.html">Historia</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Historia/historia.html">Historia</a></li>
                         <li><a href="../../../../Menu/Gobierno Municipal/Mision Vision/misionvision.html">Misión y Visión</a></li>
                         <li><a href="../../../../Menu/Gobierno Municipal/Objetivos Institucionales/objetivo.html">Objetivos Institucionales</a></li>
                         <li><a href="../../../../Menu/Gobierno Municipal/Autoridades/autoridades.html">Autoridades</a></li>
