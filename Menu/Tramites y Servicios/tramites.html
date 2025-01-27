@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipio - Página Similar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: #004080;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            height: 50px;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .services, .news {
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+        .services h2, .news h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .service-list, .news-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service-item, .news-item {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+        }
+        footer {
+            background: #002050;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo del Municipio" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h1>Bienvenido al Municipio</h1>
+            <p>Trabajando por el desarrollo de nuestra comunidad.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Educación</h3>
+                    <p>Proyectos educativos para el desarrollo de nuestra juventud.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Salud</h3>
+                    <p>Mejorando la calidad de los servicios médicos para todos.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Agricultura</h3>
+                    <p>Apoyando al sector agrícola para un futuro sostenible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Noticias -->
+    <section id="noticias" class="news">
+        <div class="container">
+            <h2>Últimas Noticias</h2>
+            <div class="news-list">
+                <article class="news-item">
+                    <h3>Título de Noticia</h3>
+                    <p>Resumen breve de la noticia. <a href="#">Leer más</a></p>
+                </article>
+                <article class="news-item">
+                    <h3>Título de Noticia</h3>
+                    <p>Resumen breve de la noticia. <a href="#">Leer más</a></p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Municipio de Buena Vista. Todos los derechos reservados.</p>
+            <p>Síguenos en:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
