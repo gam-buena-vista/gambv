@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.createElement("header");
     header.innerHTML = `
-        <img src="../../../../Imagenes/logogamnegro.png" class="logo" alt="Logo del Gobierno Autónomo Municipal de Buena Vista">
+        <img src="../Imagenes/logogamnegro.png" class="logo" alt="Logo del Gobierno Autónomo Municipal de Buena Vista">
         <input type="checkbox" id="menu" aria-label="Abrir menú">
         <label for="menu">
-            <img class="menu-icono" src="../../../../Imagenes/menu.png" alt="Ícono de menú">
+            <img class="menu-icono" src="../Imagenes/menu.png" alt="Ícono de menú">
         </label>
         <nav class="navbar">
             <ul>
