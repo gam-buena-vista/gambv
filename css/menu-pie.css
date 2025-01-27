@@ -1,0 +1,290 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+  color: #fff; /* Cambia el color del texto si la imagen tiene un fondo oscuro */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+
+/* Estilos del Header y el menú */
+header {
+  position: fixed; /* Mantiene el header fijo en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(14, 76, 247, 0.9); /* Fondo con opacidad */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  padding: 0rem 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+img {
+  width: 200px;
+  vertical-align: middle;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+header .navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-size: 1.125rem;
+  padding: 10px 15px;
+  color: aliceblue;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background-color: #333;
+}
+
+/* Menú desplegable */
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: #5c40fd;
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+
+header.navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+header label {
+  cursor: pointer;
+  display: none;
+}
+
+/* Menú en pantallas pequeñas */
+@media(max-width:768px) {
+  header {
+    padding: 0px 2%;
+  }
+
+  header label {
+    display: inline-block;
+  }
+
+  /* Menú en pantalla pequeña */
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #5c40fd;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .navbar ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+  }
+
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li {
+    background-color: #5c40fd;
+  }
+
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+
+  /* Mostrar el menú cuando el checkbox está seleccionado */
+  #menu:checked ~ .navbar {
+    display: flex;
+  }
+
+  /* Añadir margen superior cuando el menú está visible */
+  main {
+    margin-top: 80px; /* Ajusta según el tamaño del header */
+  }
+}
+
+/* Menú en pantallas muy pequeñas (<=480px) */
+@media (max-width: 480px) {
+  header .logo {
+    font-size: 1.25rem; /* Reducción del tamaño del logo */
+  }
+
+  header .navbar ul li a {
+    font-size: 0.875rem; /* Ajuste en el tamaño del texto */
+    padding: 8px 10px;
+  }
+
+  img {
+    width: 120px; /* Ajuste en el tamaño del logo */
+  }
+
+  main {
+    margin-top: 100px; /* Espacio adicional para el header */
+  }
+}
+main {
+  padding: 0rem;
+  padding-bottom: 2rem; /* Añade un poco de espacio al final */
+  margin-top: 150px; /* Empieza después del header */
+  margin-bottom: 0px; /* Termina antes del footer */
+  flex: 1;
+}
+
+
+/* Estilos para el pie de página */
+.custom-footer {
+  width: 100%;               /* Asegura que ocupe todo el ancho */
+  background-color: rgba(0, 0, 0, 0.8);  /* Color de fondo oscuro */
+  color: white;              /* Color del texto */
+  padding: 0rem;             /* Espaciado superior e inferior */
+  text-align: center;        /* Centra el texto */
+  position: relative;        /* Cambiar a 'relative' para posicionamiento normal */
+}
+
+.custom-footer hr {
+  border: 0;
+  border-top: 1px solid #fff; /* Línea blanca */
+  margin: 4px auto; /* Espaciado alrededor de la línea */
+  width: 50%; /* Ancho de la línea */
+}
+
+/* Enlace del mapa del sitio */
+.custom-footer .text-warning {
+  color: #f39c12; /* Color amarillo para el enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.custom-footer .text-warning:hover {
+  color: #e67e22; /* Color cuando el enlace se pasa por encima */
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Icono del mapa del sitio */
+.custom-footer i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Texto del copyright */
+.custom-footer p {
+  margin: 5px 0;
+}
+
+/* Fecha de actualización */
+#fecha_pie {
+  font-size: 12px;
+  color: #bdc3c7; /* Color gris claro */
+  margin-top: 10px;
+}
+
+/* Asegura que los elementos en el footer sean responsivos */
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 0rem; /* Ajusta el espaciado en pantallas más pequeñas */
+    font-size: 12px; /* Reduce el tamaño de fuente */
+  }
+
+  .custom-footer i {
+    font-size: 22px; /* Aumenta ligeramente el tamaño del icono */
+    margin-bottom: 10px; /* Espaciado adicional en íconos */
+  }
+
+  .custom-footer hr {
+    width: 70%; /* Línea más ancha en pantallas pequeñas */
+    margin: 2px auto;
+  }
+
+  .custom-footer p {
+    margin: 10px 0; /* Mayor espaciado entre párrafos */
+    font-size: 13px; /* Ajusta el tamaño del texto */
+  }
+
+  #fecha_pie {
+    font-size: 13px; /* Tamaño ligeramente mayor en pantallas pequeñas */
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-footer {
+    padding: 0rem; /* Menor padding para pantallas muy pequeñas */
+    font-size: 12px; /* Reduce un poco más el tamaño de la fuente */
+  }
+
+  .custom-footer hr {
+    width: 95%; /* Ajusta el ancho del separador */
+    margin: 2px auto;
+  }
+
+  .custom-footer i {
+    font-size: 20px; /* Ajusta el tamaño del icono */
+  }
+
+  #fecha_pie {
+    font-size: 12px; /* Texto más pequeño para pantallas pequeñas */
+  }
+}
