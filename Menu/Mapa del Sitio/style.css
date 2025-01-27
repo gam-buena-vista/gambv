@@ -1,0 +1,191 @@
+body{
+    background-image: url('../../../Imagenes/fondo-blanco.jpg'); /* Cambia esto por la ruta de tu imagen */
+  }
+  
+  main {
+    padding-top: 0%; /* Ajusta al alto real del header */
+    padding-bottom: 0px; /* Ajusta al alto real del footer */
+    flex: 0; /* Asegura que el contenido principal ocupe el espacio disponible */
+    padding-left: 0rem; /* Espaciado lateral */
+    padding-right: 0rem;
+    position: relative;
+  }
+
+/* Estilo general para la sección Mapa del Sitio */
+#header3-1c {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
+  border-radius: 16px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+#header3-1c:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor del encabezado */
+#header3-1c h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#header3-1c #fecha_cabecera {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-size: 3rem;
+  color: #18038f; /* Color principal de los títulos */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Estilo de las filas */
+#header3-1c .row {
+  margin-bottom: 30px;
+}
+
+#header3-1c .col-md-4 {
+  margin-bottom: 20px;
+}
+
+/* Títulos de las secciones */
+#header3-1c h3 {
+  font-size: 22px;
+  color: #007bff;
+  margin-bottom: 15px;
+  position: relative;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+
+
+/* Lista de enlaces */
+#header3-1c ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#header3-1c ul li {
+  margin-bottom: 10px;
+}
+
+#header3-1c ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #007bff;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+#header3-1c ul li a:hover {
+  color: #0056b3;
+  padding-left: 5px;
+}
+
+#header3-1c ul li a::before {
+  content: '→';
+  position: absolute;
+  left: -15px;
+  transition: left 0.3s ease;
+  opacity: 0;
+}
+
+#header3-1c ul li a:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+/* Botones de redes sociales */
+#header3-1c .btn-social {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#header3-1c .btn-social:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+#header3-1c .btn-social[title="Facebook"] {
+  background: #3b5998;
+}
+
+#header3-1c .btn-social[title="YouTube"] {
+  background: #c4302b;
+}
+
+#header3-1c .btn-social[title="TikTok"] {
+  background: #000000;
+}
+
+/* Estilo responsivo para pantallas grandes */
+@media (min-width: 992px) {
+  #header3-1c .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  #header3-1c .col-md-4 {
+      flex: 1 1 30%;
+  }
+}
+
+/* Estilo responsivo para pantallas medianas */
+@media (max-width: 992px) and (min-width: 768px) {
+  #header3-1c .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  #header3-1c .col-md-4 {
+      flex: 1 1 45%;
+  }
+}
+
+/* Estilo responsivo para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  #header3-1c .row {
+      display: block;
+  }
+
+  #header3-1c .col-md-4 {
+      margin-bottom: 20px;
+      flex: 1 1 100%; /* Las columnas se apilan en pantallas pequeñas */
+  }
+
+  #header3-1c h2 {
+      font-size: 24px; /* Reducir el tamaño del título en móviles */
+  }
+
+  #header3-1c h3 {
+      font-size: 20px; /* Reducir el tamaño de los subtítulos */
+  }
+
+  #header3-1c ul li a {
+      font-size: 14px; /* Reducir el tamaño de los enlaces */
+  }
+}

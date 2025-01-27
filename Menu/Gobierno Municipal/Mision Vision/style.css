@@ -1,0 +1,154 @@
+/* General */
+
+body{
+  background-image: url('../../../Imagenes/fondo-blanco.jpg'); /* Cambia esto por la ruta de tu imagen */
+}
+
+main {
+  padding-top: 0%; /* Ajusta al alto real del header */
+  padding-bottom: 0px; /* Ajusta al alto real del footer */
+  flex: 0; /* Asegura que el contenido principal ocupe el espacio disponible */
+  padding-left: 0rem; /* Espaciado lateral */
+  padding-right: 0rem;
+  position: relative;
+}
+/* Sección de Misión y Visión */
+
+.about_section {
+  padding: 0px 0px;
+  background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Fija la imagen para un efecto parallax */
+  color: #030000; /* Asegura que el texto sea legible sobre el fondo */
+}
+
+.about_section img {
+  width: 100%; /* Ocupa el 100% del contenedor */
+  max-width: 1500px; /* Ajusta este valor para aumentar el tamaño máximo */
+  border-radius: 8px; /* Mantiene los bordes redondeados */
+  margin: 0px auto; /* Reduce el margen superior para dar más espacio */
+  display: block; /* Centra la imagen si está dentro de un contenedor */
+}
+
+.detail-box {
+  flex: none; /* Los elementos no ocupan todo el espacio disponible */
+    width: 45%; /* Ocuparán el ancho completo del contenedor */
+    text-align: center;
+    max-width: 95%; /* Puedes ajustar esto según necesites */
+    margin: 5%; /* Espaciado entre los elementos */
+    padding: 0%;
+}
+
+.custom_heading {
+   flex: 1;
+  text-align: left;
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina padding */
+  display: flex; /* Asegura que los elementos dentro de detail-box se alineen */
+  flex-direction: column; /* Organiza el contenido en columnas */
+  justify-content: flex-start;
+
+}
+
+.about_section_content {
+  display: flex; /* Flexbox para diseño horizontal */
+  flex-direction: row; /* Alineación horizontal */
+  justify-content: center; /* Centrado horizontal */
+  align-items: flex-start; /* Alineación superior */
+  gap: 30px; /* Espaciado entre los elementos */
+  margin-top: 30px; /* Espacio entre imagen y contenido */
+  padding: 0px 10px;
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.about_section img {
+  width: 100%;
+  border-radius: 8px; /* Borde redondeado para la imagen */
+  margin-top: 80px;
+}
+
+h1{
+  font-size: 3rem;
+  color: #18038f; /* Color principal de los títulos */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.custom_heading span {
+  font-size: 2rem;
+  color: #18038f; /* Color principal de los títulos */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about_section p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #080000;
+  text-align: justify; /* Alineación del texto */
+  padding: 0px 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about_section_content {
+    flex-direction: column; /* Asegura disposición vertical */
+    align-items: center; /* Centra los elementos en móviles */
+    padding: 0 15px; /* Espaciado lateral */
+  }
+
+  .detail-box {
+    width: 100%; /* Ocupa todo el ancho */
+    margin-bottom: 20px; /* Espaciado entre elementos */
+    padding: 0; /* Ajuste interno */
+  }
+
+  .about_section img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho */
+    margin-top: 20px;
+  }
+
+  .custom_heading {
+    font-size: 1.5rem; /* Ajuste de títulos */
+    text-align: center; /* Centra los títulos */
+  }
+
+  .about_section p {
+    font-size: 1rem; /* Tamaño de texto más legible */
+    text-align: justify; /* Justifica el texto */
+  }
+}
+
+@media (max-width: 576px) {
+  .about_section_content {
+    padding: 0 10px; /* Menos espaciado lateral */
+  }
+
+  .about_section img {
+    margin-top: 15px; /* Espaciado menor */
+  }
+
+  .custom_heading {
+    font-size: 1.2rem; /* Ajuste más pequeño para títulos */
+  }
+
+  .about_section p {
+    font-size: 0.9rem; /* Tamaño de texto reducido */
+  }
+}
+
+@media (max-width: 480px) {
+  .about_section_content {
+    padding: 0 5px; /* Espaciado mínimo */
+  }
+
+  .custom_heading {
+    font-size: 1rem; /* Tamaño más reducido */
+  }
+
+  .about_section p {
+    font-size: 0.8rem; /* Texto más pequeño */
+  }
+}
