@@ -1,24 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.createElement("header");
     header.innerHTML = `
-        <img src="./gambv/Imagenes/logogamnegro.png" class="logo" alt="Logo del Gobierno Autónomo Municipal de Buena Vista">
+        <img src="./Imagenes/logogamnegro.png" class="logo" alt="Logo del Gobierno Autónomo Municipal de Buena Vista">
         <input type="checkbox" id="menu" aria-label="Abrir menú">
         <label for="menu">
-            <img class="menu-icono" src="./gambv/Imagenes/menu.png" alt="Ícono de menú">
+            <img class="menu-icono" src="./Imagenes/menu.png" alt="Ícono de menú">
         </label>
         <nav class="navbar">
             <ul>
-                <li><a href="./gambv/index.html">Inicio</a></li>
+                <li><a href="./index.html">Inicio</a></li>
                 <li>
                     <a href="#">Gobierno Municipal ▼</a>
                     <ul>
-                        <li><a href="./gambv/Menu/Gobierno Municipal/Historia/historia.html">Historia</a></li>
-                        <li><a href="./gambv/Menu/Gobierno Municipal/Mision Vision/misionvision.html">Misión y Visión</a></li>
-                        <li><a href="./gambv/Menu/Gobierno Municipal/Objetivos Institucionales/objetivo.html">Objetivos Institucionales</a></li>
-                        <li><a href="./gambv/Menu/Gobierno Municipal/Autoridades/autoridades.html">Autoridades</a></li>
-                        <li><a href="./gambv/Menu/Gobierno Municipal/Organigrama/organigrama.html">Organigrama</a></li>
-                        <li><a href="./gambv/Menu/Gobierno Municipal/Informacion Estadistica/estadistica.html">Información Estadística</a></li>
-                        <li><a href="./gambv/Menu/Gobierno Municipal/Distritos y OTBs/distrito-otb.html">Distritos y OTB's</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Historia/historia.html">Historia</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Mision Vision/misionvision.html">Misión y Visión</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Objetivos Institucionales/objetivo.html">Objetivos Institucionales</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Autoridades/autoridades.html">Autoridades</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Organigrama/organigrama.html">Organigrama</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Informacion Estadistica/estadistica.html">Información Estadística</a></li>
+                        <li><a href="./Menu/Gobierno Municipal/Distritos y OTBs/distrito-otb.html">Distritos y OTB's</a></li>
                     </ul>
                 </li>
                 <li>
