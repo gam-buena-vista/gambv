@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Enlace al mapa del sitio -->
                 <p class="text-center">
                     <i class="fas fa-sitemap fa-lg"></i>&nbsp;&nbsp;&nbsp;
-                    <strong><a href="../../../../Menu/Mapa del Sitio/mapasitio.html" class="text-warning">Mapa del Sitio</a></strong>
+                    <strong><a href="../Menu/Mapa del Sitio/mapasitio.html" class="text-warning">Mapa del Sitio</a></strong>
                 </p>
                 <!-- Copyright -->
                 <p class="text-center">
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Añade el script actualizador.js
         const script = document.createElement('script');
-        script.src = '../../../../js/actualizador.js';
+        script.src = 'js/actualizador.js';
         document.body.appendChild(script);
     } else {
         console.error('Elemento <footer> no encontrado.');
